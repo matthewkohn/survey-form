@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+<header>
+  <h1 id="title">Your coding experience</h1>
+  <p id="description">Tell me about you and your experience</p>
+</header>
+
+  <form action="#" id="survey-form">
+    <div class="form-question">
+      <label for="name" id="name-label">Your name</label>
+      <input type="text" id="name" placeholder="Name" required>
+    </div>
+
+    <div class="form-question">
+      <label for="email" id="email-label">Email address</label>
+      <input type="email" id="email" placeholder="nicetomeetyou@hello.com" required> <!-- make sure email is formatted correctly (HTML5 validation error)-->
+    </div>
+
+    <div class="form-question">
+      <label for="age" id="number-label">Your age (optional)</label>
+      <input type="number" id="number" placeholder="101"> <!-- make sure this accepts only numbers (HTML5 validation error)-->
+    </div>
+
+    <div class="form-question">
+      <label for="question" id="dropdown-label">How long have you been coding?</label>
+      <select name="Choice" id="dropdown">
+        <option value="yes">Less than a year</option>
+        <option value="no">Between 1 and 2 years</option>
+        <option value="dislike">Between 2 and 4 years</option>
+        <option value="neutral">Between 4 and 10 years</option>
+        <option value="maybe">Between 10 and 15 years</option>
+        <option value="secret">More than 15 years!</option>
+      </select>
+    </div>
+
+    <div class="form-question">
+      <label for="question">How did you learn to code? (check all that apply)</label>
+
+
+    </div>
+
+    <div class="form-question">
+      <label for="" id="radio-label">My all-time favorite coding language is:</label>
+      <ul>
+        <li>
+          <input type="radio" name="language">
+          <label for="C">C</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="Java">Java</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="Python">Python</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="C++">C++</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="C#">C#</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="Visual Basic">Visual Basic</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="JavaScript">JavaScript</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="PHP">PHP</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="R">R</label>
+        </li>
+        <li>
+          <input type="radio" name="language">
+          <label for="SQL">SQL</label>
+        </li>
+
+        <li>
+          <input type="radio" name="language">
+          <label for="other">Other:</label>
+          <input type="text" name="Other" id="OtherLanguage" placeholder="My favorite is...">
+      </ul>
+      <textarea name="why" id="favoriteReason" cols="50" rows="5" required>I'm curious. Why is it your favorite?</textarea>
+    </div>
+
+    <div class="form-question">
+      <label for="" id="checkboxes-label">Languages I know... so far. (check all that apply):</label>
+      <ul>
+        <li>
+          <input type="checkbox" class="checkbox" value="BASIC">
+          <label for="bASIC">BASIC</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="C">
+          <label for="C">C</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="C++">
+          <label for="C++">C++</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="C#">
+          <label for="C#">C#</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="COBOL">
+          <label for="COBOL">COBOL</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Go">
+          <label for="Go">Go</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Java">
+          <label for="Java">Java</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Kotlin">
+          <label for="Kotlin">Kotlin</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Machine code">
+          <label for="Machine code">Machine code</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="JavaScript">
+          <label for="JavaScript">JavaScript</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="HTML/CSS">
+          <label for="HTML/CSS">HTML/CSS</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="NET">
+          <label for="NET">.NET</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Pascal">
+          <label for="Pascal">Pascal</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="PHP">
+          <label for="PHP">PHP</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Python">
+          <label for="Python">Python</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="R">
+          <label for="R">R</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Ruby">
+          <label for="Ruby">Ruby</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Scratch">
+          <label for="Scratch">Scratch</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="SQL">
+          <label for="SQL">SQL</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="TypeScript">
+          <label for="TypeScript">TypeScript</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Unix shell">
+          <label for="Unix shell">Unix shell</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Markdown">
+          <label for="Markdown">Markdown</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" value="Swift">
+          <label for="Swift">Swift</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="form-question">
+      <label for="Other languages" id="textarea-label">Any others?</label>
+      <textarea name="Other languages" id="textarea" cols="40" rows="5">Language1, Language2, Language3...
+      </textarea>
+    </div>
+
+    <div class="form-question">
+      <label for="Advice">Any words of wisdom I could ask you to share?</label>
+      <textarea name="Advice" id="advice" cols="60" rows="10" required>What's your "personal" code to life, the universe, and everything?</textarea>
+    </div>
+    <div class="form-question">
+      <button id="submit">SUBMIT</button>
+    </div>
+  </form>
+
+
+</body>
+</html>
