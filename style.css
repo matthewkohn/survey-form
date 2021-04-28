@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: orange;
   font-family: Roboto, sans-serif;
   height: 100vh;
   margin: 0;
@@ -15,14 +16,232 @@ body {
 h1 {
   font-family: 'Cinzel', Cursive;
   font-size: 44px;
+  transform: rotate(20deg);
 }
 
 p {
+  transform: rotate(20deg);
+  font-size: 24px;
+}
+
+input::placeholder {
+  color: darkslategrey;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  font-style: italic;
+  font-size: .9rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+ul li {
+  padding-left:24px;
   
 }
 
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header, .footer {
+  background-color: lightblue;
+  display: inherit;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100vw;
+  height: 30vh;
+  transform: rotate(-20deg);
+  z-index: -2;
+}
+
 .form-question {
-  border: 2px dashed green;
-  margin: 20px;
-  padding: 10px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  border: 1px solid lightblue;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 60vw;
+  max-width: 800px;
+  z-index: 5;
+}
+
+.fav-container ul {
+  width: 50vw;
+}
+
+.question {
+  font-family: 'Cinzel', Cursive;
+  font-size: 24px;
+  padding: 15px;
+  display: inherit;
+  text-align: center;
+  align-self: center;
+}
+
+.other {
+  padding-right: 10px;
+  display: inherit;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.many-checkboxes {
+  -webkit-column-count: 3;  /* Chrome/Opera, Safari */
+  -moz-column-count: 3; /* Mozilla Firefox */
+  column-count: 3; 
+}
+
+.checkbox {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#name, #email, #number, #dropdown {
+  background-color: lightblue;
+  color: #000;
+  height: 3rem;
+  align-self: center;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border-color: lightblue;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+#name:focus, #email:focus, #number:focus {
+  outline:slateblue;
+  background-color: #fff;
+  color: red;
+}
+
+#name, #email {
+  width: 20rem;
+  font-weight: bold;
+}
+
+#number {
+  width: 10rem;
+}
+
+#dropdown {
+  border: 2px solid black;
+}
+
+#dropdown:focus {
+  border: 4px solid orange;
+}
+
+input#OtherLanguage {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px;
+  letter-spacing: 0.8px;
+}
+
+#favoriteReason, #textarea, #advice {
+  display: inherit;
+  align-self: center;
+  margin: 15px;
+  font-family: inherit;
+  font-style: italic;
+  padding: 15px 22px;
+  line-height: 1.5rem;
+  border-radius: 10px;
+}
+
+#favoriteReason:focus, #textarea:focus, #advice:focus {
+  font-style: normal;
+}
+
+#textarea-label, #textarea, #advice, #submit {
+  display: inherit;
+  align-self: center;
+}
+
+button {
+  display: flex;
+  justify-self: center;
+  padding: 30px;
+  font-size: 30px;
+  font-family: 'Cinzel', Cursive;  
+  border-radius: 50%;
+  transform: rotate(20deg);
+  color: #fff;
+  
+  background: #d93442;
+  background-image: -webkit-linear-gradient(top, #d93442, #b88e2b);
+  background-image: -moz-linear-gradient(top, #d93442, #b88e2b);
+  background-image: -ms-linear-gradient(top, #d93442, #b88e2b);
+  background-image: -o-linear-gradient(top, #d93442, #b88e2b);
+  background-image: linear-gradient(to bottom, #d93442, #b88e2b);
+  -webkit-box-shadow: 10px 7px 3px #666666;
+  -moz-box-shadow: 10px 7px 3px #666666;
+  box-shadow: 10px 7px 3px #666666;
+}
+
+button:
+#submit:focus {
+  cursor: pointer;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media(max-width: 1100px) {
+  .many-checkboxes {
+    -webkit-column-count: 2;  /* Chrome/Opera, Safari */
+    -moz-column-count: 2; /* Mozilla Firefox */
+    column-count: 2; 
+  }
+}
+
+@media(max-width: 800px) {
+  p {
+    font-size: 1rem;
+  }
+  #name, #email {
+    max-width: 50vw;
+  }
+  
+  textarea {
+    max-width: 50vw;
+  }
+
+  input#OtherLanguage {
+    max-width: 23vw;
+  }
+
+  ul li {
+    font-size: 0.8rem;
+    padding-left: 0;
+  }
+
+
+}
+
+@media(max-width: 580px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .many-checkboxes {
+    -webkit-column-count: 1;  /* Chrome/Opera, Safari */
+    -moz-column-count: 1; /* Mozilla Firefox */
+    column-count: 1; 
+  }
 }
